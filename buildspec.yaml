@@ -12,6 +12,3 @@ phases:
     commands:
       - docker push 058264317285.dkr.ecr.us-east-1.amazonaws.com/ijse-test:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"mywebsite","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json   
-artifacts:
-  files: imagedefinitions.json
